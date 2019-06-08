@@ -12,10 +12,6 @@ import CoreMedia
 import CoreGraphics
 import UIKit
 
-extension CMTime {
-  static let zero = kCMTimeZero
-}
-
 enum CAMediaTimingFillMode {
   static let both = kCAFillModeBoth
 }
@@ -37,7 +33,7 @@ public extension UINavigationController {
 
 extension UIViewController {
   var children: [UIViewController] {
-    return childViewControllers
+    return children
   }
 }
 
@@ -47,6 +43,4 @@ extension RunLoop {
   }
 }
 #endif
-
-
 
